@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="520.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.smarthire.Auth.LoginController">
+   <left>
+      <AnchorPane prefHeight="407.0" prefWidth="228.0" style="-fx-background-color: #ffffff;" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="bienvenueId" alignment="CENTER" layoutX="14.0" layoutY="59.0" prefHeight="17.0" prefWidth="215.0" text="Bienvenue A " textAlignment="CENTER" textFill="#251111">
+               <font>
+                  <Font name="Verdana" size="24.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+            <Label fx:id="smartlabelId" alignment="CENTER" layoutX="7.0" layoutY="102.0" prefHeight="17.0" prefWidth="215.0" text="SmartHire" textAlignment="CENTER" textFill="#a32222">
+               <font>
+                  <Font name="Book Antiqua" size="36.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+            <ImageView fx:id="imageId" fitHeight="182.0" fitWidth="192.0" layoutX="26.0" layoutY="149.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="26.0">
+               <image>
+                  <Image url="@logo-java.png" />
+               </image>
+            </ImageView>
+            <Separator layoutX="15.0" layoutY="356.0" prefHeight="2.0" prefWidth="200.0" />
+            <Label layoutX="38.0" layoutY="367.0" text="Copyright(c). All Rights Reserved">
+               <font>
+                  <Font name="Bell MT" size="11.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="600.0" prefWidth="780.0" style="-fx-background-color: #fff;" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="seConnecterLabelId" layoutX="87.0" layoutY="45.0" text="Se Connecter">
+               <font>
+                  <Font name="Cambria" size="24.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+            <Label layoutX="24.0" layoutY="128.0" prefHeight="17.0" prefWidth="126.0" text="Login">
+               <font>
+                  <Font name="Nirmala UI Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="usernameFieldId" layoutX="24.0" layoutY="159.0" prefHeight="31.0" prefWidth="230.0" promptText="Saisi votre login..... " style="-fx-background-radius: 10; -fx-background-color: #e4e4e4;">
+               <padding>
+                  <Insets left="10.0" />
+               </padding></TextField>
+            <Label layoutX="24.0" layoutY="200.0" prefHeight="17.0" prefWidth="126.0" text="Mot de Passe">
+               <font>
+                  <Font name="Nirmala UI Bold" size="14.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="passwordFieldId" layoutX="24.0" layoutY="227.0" prefHeight="31.0" prefWidth="230.0" promptText="*******" style="-fx-background-radius: 10; -fx-background-color: #e4e4e4;">
+               <padding>
+                  <Insets left="10.0" />
+               </padding></PasswordField>
+            <Button fx:id="loginId" layoutX="47.0" layoutY="291.0" mnemonicParsing="false" onAction="#verifyCredential" prefHeight="25.0" prefWidth="184.0" style="-fx-background-radius: 5;" text="Login">
+               <font>
+                  <Font name="Cambria Math" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>
