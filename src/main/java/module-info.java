@@ -12,6 +12,7 @@ module com.example.smarthire {
     requires com.almasb.fxgl.all;
     requires java.sql;
     requires java.management;
+    requires fontawesomefx;
 
     opens com.example.smarthire to javafx.fxml;
     exports com.example.smarthire;

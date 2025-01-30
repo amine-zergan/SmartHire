@@ -11,8 +11,8 @@ public class SmartHireApplication extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(SmartHireApplication.class.getResource("hello-view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 560, 400);
+        FXMLLoader fxmlLoader = new FXMLLoader(SmartHireApplication.class.getResource("signup-view.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 780, 560);
         Image image = new Image("C:\\Users\\lenovo\\IdeaProjects\\SmartHire\\src\\main\\java\\com\\example\\smarthire\\logo.png");
         stage.setTitle("SmartHire Application");
         stage.setMaxHeight(400);
