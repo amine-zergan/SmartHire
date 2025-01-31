@@ -6,6 +6,8 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 import javafx.scene.image.ImageView;
 import javafx.scene.image.Image;
+import javafx.stage.StageStyle;
+
 import java.net.URL;
 import java.sql.Connection;
 import java.util.Objects;
@@ -39,18 +41,17 @@ public class LoginController  implements  Initializable{
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        imageId = new ImageView();
-        Image image = new Image(Objects.requireNonNull(getClass().getResourceAsStream("logo-java.png")));
-        imageId.setImage(image);
+
     }
 
 
     @FXML
     public  void verifyCredential(){
         if(usernameFieldId.getText().isBlank() && passwordFieldId.getText().isBlank()){
-            Alert erreur = new Alert(Alert.AlertType.ERROR) ;
-            erreur.setTitle("Credential invalide");
+            Alert erreur = new Alert(Alert.AlertType.WARNING) ;
+            erreur.setTitle("");
             erreur.setContentText("Merci de Saisir votre login et mot de passe");
+            erreur.initStyle(StageStyle.UNDECORATED);
             erreur.show();
         }
     }
